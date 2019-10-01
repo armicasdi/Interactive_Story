@@ -11,7 +11,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
-        android:text="Button"
         android:textColor="#3A8AEC"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -34,15 +33,20 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="200dp"
-        tools:layout_editor_absoluteY="165dp">
+        android:background="@android:color/white"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/choice1Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <ImageView
+                android:contentDescription="@string/story_image_content_description"
                 android:id="@+id/storyImage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

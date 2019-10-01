@@ -8,10 +8,11 @@ import android.util.Log;
 
 import com.example.interactivestory.R;
 import com.example.interactivestory.model.Page;
+import com.example.interactivestory.model.Story;
 
 public class StoryActivity extends AppCompatActivity {
 
-
+    private Story story;
 
     public static final String TAG = StoryActivity.class.getSimpleName();
 
@@ -32,6 +33,8 @@ public class StoryActivity extends AppCompatActivity {
         }
 
         Log.d(TAG, name);
+
+        story = new Story();
 
 
     }
