@@ -10,6 +10,7 @@ public class Story {
         pages = new Page[7];
 
 
+
         pages[0] = new Page(R.drawable.page0, R.string.page0, new Choice(R.string.page0_choice1, 1), new Choice(R.string.page0_choice2, 2) );
 
         pages[1] = new Page(R.drawable.page1,
